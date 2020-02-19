@@ -1,5 +1,5 @@
 <template>
-    <div class="imgflow">
+    <section class="imgflow">
             <v-row>
                 <v-col cols-sm="8" offset-sm="1" sm="8" cols-md="12" offset-md="4">
                     <div class="btnHeaderBlock">
@@ -12,7 +12,7 @@
                 </v-col>
             </v-row>
         <div class="imgHeaderBlock"></div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -27,6 +27,7 @@ export default {
     width: 100%;
     max-width: 1650px;
     height: 100vh;
+    min-height: 500px;
     max-height: 500px;
     overflow: hidden;
     position: relative; 
@@ -36,13 +37,14 @@ export default {
     justify-content: center;
     @include respond-to(medium-screens) { 
         background-position: top center; 
-        max-height: 660px; 
+        max-height: 660px;
+        min-height: 660px;
     }
     .btnHeaderBlock{
         position: absolute;
         width: 100%;
         max-width: 1200px; 
-        z-index: 5;
+        z-index: 4;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -69,7 +71,7 @@ export default {
     }
     .imgHeaderBlock{
         position: absolute;
-        z-index: 4;
+        z-index: 3;
         bottom: 0;
         background-image: url(/img/headerImage.png);
         background-position: top right 30%;

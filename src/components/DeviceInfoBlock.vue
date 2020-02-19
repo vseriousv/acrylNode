@@ -1,5 +1,5 @@
 <template>
-    <section class="project-info-block">
+    <section class="device-info-block">
         <v-container>
             <v-row class="height100">
                 <v-col cols="12" sm="5">
@@ -45,7 +45,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/styles/index.scss";
-.project-info-block{
+.device-info-block{
     width: 100%;
     display: flex;
     padding: 20px 10px;

@@ -4,6 +4,16 @@ $medium: 960px;
 $large: 1264px;
 $extraLarge: 1904px;
 
+//Variables for text
+$headSection: 24px;
+$headHeightLineSection: 29px;
+$textSection: 16px;
+$textHeadLineSection: 20px;
+
+//Variables for colors
+$primaryColor: #fedd0e;
+$secondaryColor: #3C3C40;
+
 @mixin respond-to($media) {
     @if $media == handhelds {
       @media only screen and (max-width: $small -1) { @content; }
@@ -15,3 +25,10 @@ $extraLarge: 1904px;
       @media only screen and (min-width: $large) { @content; }
     }
 }
+
+//classes for text
+.text-bold{font-weight: bold;}
+
+//classes for colors
+.primaryColor { color: $primaryColor}
+.secondaryColor { color: $secondaryColor}

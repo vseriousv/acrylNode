@@ -8,6 +8,7 @@
     <app-header :menu-items="menuItems" v-on:changeDrawer="changeDrawerReverse"></app-header>
     <main-block></main-block>
     <project-info-block></project-info-block>
+    <device-info-block></device-info-block>
   </v-app>
 </template>
 
@@ -15,6 +16,7 @@
 import AppHeader from '@/components/AppHeader'
 import MainBlock from '@/components/MainBlock'
 import ProjectInfoBlock from '@/components/ProjectInfoBlock'
+import DeviceInfoBlock from '@/components/DeviceInfoBlock'
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
   components: {
     AppHeader,
     MainBlock,
-    ProjectInfoBlock
+    ProjectInfoBlock,
+    DeviceInfoBlock
   },
 
   data() {

@@ -14,4 +14,4 @@ $extraLarge: 1904px;
     @else if $media == wide-screens {
       @media only screen and (min-width: $large) { @content; }
     }
-  }
+}

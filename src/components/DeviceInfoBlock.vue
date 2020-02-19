@@ -3,21 +3,22 @@
         <v-container>
             <v-row class="height100">
                 <v-col cols="12" sm="5">
-                    <div class="mapImage"></div>
+                    <div class="nodeImage"></div>
                 </v-col>
                 <v-col cols="12" sm="7">
                     <div class="describeBlock">
                         <h2 class="headSection pb-3 secondaryColor">{{headSection}}</h2>
                         <p class="py-2 secondaryColor">{{textSection_1}}</p>
-                        <p class="py-2 text-bold secondaryColor">{{textSection_2}}</p>
-                        <p class="py-2 secondaryColor">{{textSection_3}}</p>
                     </div>
-                    <div class="numbersBlock">
-                        <div v-for="(indecator, i) in indicators" :key="`indecator${i}`" :class="`indecator grid${indecator.id}`">
-                            <span class="number">{{indecator.number}}</span>
-                            <span class="describe">{{indecator.describe}}</span>
-                        </div>
+                    <div class="advantagesBlock">
+                        <v-row>
+                            <v-col v-for="(item, i) in advantages" :key="`advantageItem${i}`" :class="`advantageItem grid${item.id}`" cols="12" md="6">
+                                <img class="icon" :src="`/img/${item.icon}.webp`">
+                                <span class="describe">{{item.describe}}</span>
+                            </v-col>
+                        </v-row>
                     </div>
+                    <div class="py-5"><v-btn rounded color="primary" >Заказать</v-btn></div>
                 </v-col>
             </v-row>
         </v-container>
@@ -29,14 +30,16 @@ export default {
   name: 'ProjectInfoBlock',
   data(){
       return {
-            headSection: `Описание проекта`,
-            textSection_1: `Наша цель — создать самую распределенную и устойчивую сеть для записи данных бизнеса. `,
-            textSection_2: `Размести у себя дома компактный и бесшумный дата-центр ACRYL Node, стань частью сети и получай за это вознаграждение. `,
-            textSection_3: `Это новый вид бизнеса в котором мы вместе создаем децентрализованное пространство, где каждый участник получает доход.`,
-            indicators: [
-                {id: 1, number: 7, describe: "стран" },
-                {id: 2, number: 25, describe: "городов"},
-                {id: 3, number: 1000, describe: "устройств"}
+            headSection: `Описание устройства`,
+            textSection_1: `ACRYL Node – экономичен и нуждается в потреблении энергии, сравнимом с обычной лампочкой. 
+                            Никаких сложных действий, простые шаги для того, чтобы начать зарабатывать. Текущая доходность ~ $140 в месяц. `,
+            advantages: [
+                {id: 1, icon: "icon_dollar", describe: "Стабильная доходность" },
+                {id: 2, icon: "icon_garant", describe: "Гарантия"},
+                {id: 3, icon: "icon_60wt", describe: "Компактность и бесшумность"},
+                {id: 4, icon: "icon_gear", describe: "Простая установка и обслуживание"},
+                {id: 5, icon: "icon_node", describe: "Малое энергопотребление"},
+                {id: 6, icon: "icon_mobile", describe: "Удобное приложение"}
             ]
       }
   }
@@ -49,8 +52,8 @@ export default {
     width: 100%;
     display: flex;
     padding: 20px 10px;
-    .mapImage{
-        background-image: url(/img/map.png);
+    .nodeImage{
+        background-image: url(/img/NodeImg.png);
         width: 100%;
         min-height: 250px;
         @include respond-to(medium-screens) { 
@@ -62,33 +65,28 @@ export default {
         background-repeat: no-repeat;
         background-size: contain; 
     }
-    .numbersBlock{
-        display: grid;
-        grid-gap: 10px;
-        grid-template-areas: 
-                "grid1 grid2 grid2 grid2 grid2"
-                "grid3 grid3 grid3 grid3 grid3";
-        .grid1{ grid-area: grid1}
-        .grid2{ grid-area: grid2}
-        .grid3{ grid-area: grid3}
-        @include respond-to(medium-screens) { 
-            grid-template-areas: 
-                "grid1 grid2 grid3 grid3 grid3 grid3 grid3";
-        }
-        .indecator{
+    .advantagesBlock{
+        .advantageItem{
             display: flex;
-            flex-direction: column;
-            .number{
-                font-weight: bold;
-                font-size: 62px;
-                line-height: 76px;
-                color: $primaryColor;
+            img.icon{
+                width: 60px;
+                height: 41px;
+                @include respond-to(medium-screens) { 
+                    width: 120px;
+                    height: 80px;
+                }
+                @include respond-to(large-screens) { 
+                    width: 75px;
+                    height: 48px;
+                }
+                @include respond-to(wide-screens) { 
+                    width: 120px;
+                    height: 80px;
+                }
             }
             .describe{
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 20px;
-                color: $secondaryColor;
+                padding-left: 20px;
+                max-width: 170px;
             }
         }
     }

@@ -21,6 +21,9 @@ $secondaryColor: #3C3C40;
     @else if $media == medium-screens {
       @media only screen and (min-width: $small){ @content; }
     }
+    @else if $media == large-screens {
+      @media only screen and (min-width: $medium){ @content; }
+    }
     @else if $media == wide-screens {
       @media only screen and (min-width: $large) { @content; }
     }

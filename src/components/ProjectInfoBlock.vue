@@ -1,5 +1,5 @@
 <template>
-    <section class="project-info-block">
+    <section class="project-info-block mxw1200">
         <v-container>
             <v-row class="height100">
                 <v-col cols="12" sm="5">

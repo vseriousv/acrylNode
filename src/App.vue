@@ -9,6 +9,7 @@
     <main-block></main-block>
     <project-info-block></project-info-block>
     <device-info-block></device-info-block>
+    <how-it-work-block></how-it-work-block>
   </v-app>
 </template>
 
@@ -17,6 +18,7 @@ import AppHeader from '@/components/AppHeader'
 import MainBlock from '@/components/MainBlock'
 import ProjectInfoBlock from '@/components/ProjectInfoBlock'
 import DeviceInfoBlock from '@/components/DeviceInfoBlock'
+import HowItWorkBlock from '@/components/HowItWorkBlock'
 
 export default {
   name: 'App',
@@ -25,7 +27,8 @@ export default {
     AppHeader,
     MainBlock,
     ProjectInfoBlock,
-    DeviceInfoBlock
+    DeviceInfoBlock,
+    HowItWorkBlock
   },
 
   data() {

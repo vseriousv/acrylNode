@@ -28,7 +28,15 @@ $secondaryColor: #3C3C40;
       @media only screen and (min-width: $large) { @content; }
     }
 }
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 
+.mxw1200{
+  max-width: 1200px;
+  margin-left:auto;
+  margin-right: auto;
+}
 //classes for text
 .text-bold{font-weight: bold;}
 

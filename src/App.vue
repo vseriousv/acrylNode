@@ -13,6 +13,7 @@
     <faq-block></faq-block>
     <form-block></form-block>
     <map-block :addressItems="addressItems"></map-block>
+    <footer-block :footer-items="footerItems" :addressItems="addressItems"></footer-block>
   </v-app>
 </template>
 
@@ -25,6 +26,7 @@ import HowItWorkBlock from '@/components/HowItWorkBlock'
 import FaqBlock from '@/components/FaqBlock'
 import FormBlock from '@/components/FormBlock'
 import MapBlock from '@/components/MapBlock'
+import FooterBlock from '@/components/FooterBlock'
 
 export default {
   name: 'App',
@@ -37,7 +39,8 @@ export default {
     HowItWorkBlock,
     FaqBlock,
     FormBlock,
-    MapBlock
+    MapBlock,
+    FooterBlock
   },
 
   data() {
@@ -48,6 +51,14 @@ export default {
         {id: 3, text: "Поддержка", link: "#support"},
         {id: 4, text: "Блог", link: "#blog"},
         {id: 5, text: "Контакты", link: "#contacts"} 
+      ],
+      footerItems: [
+        {id: 1, text: "Магазин", link: "#shop"},
+        {id: 2, text: "Описание", link: "#describe"},
+        {id: 3, text: "Поддержка", link: "#support"},
+        {id: 4, text: "Блог", link: "#blog"},
+        {id: 5, text: "Контакты", link: "#contacts"},
+        {id: 6, text: "Инструкция", link: "#instr"},
       ],
       drawer: false,
       addressItems: {

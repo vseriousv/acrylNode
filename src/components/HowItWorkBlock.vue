@@ -2,10 +2,10 @@
     <section class="how-it-work-block mxw1200">
         <v-container>
             <v-row class="height100">
-                <v-col cols="12" md="5" class="hidden-sm-and-down"> 
+                <v-col cols="12" sm="5" class="d-none d-sm-flex"> 
                     <div class="mapImage"></div>
                 </v-col>
-                <v-col cols="12" md="7">
+                <v-col cols="12" sm="7">
                     <div class="describeBlock">
                         <h2 class="headSection pb-3 secondaryColor">{{headSection}}</h2>
                         <p class="py-2 secondaryColor">{{textSection_1}}</p>
@@ -60,8 +60,8 @@ export default {
         width: 100%;
         min-height: 250px;
         @include respond-to(medium-screens) { 
-            max-height: 500px;
-            min-height: 500px;
+            max-height: 300px;
+            min-height: 300px;
         }
         height: 100%;
         background-position: top center;

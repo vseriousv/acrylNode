@@ -9,9 +9,12 @@ $headSection: 24px;
 $headHeightLineSection: 29px;
 $textSection: 16px;
 $textHeadLineSection: 20px;
+$subheadSection: 16px;
+$subheadHeightLineSection: 20px;
 
 //Variables for colors
 $primaryColor: #fedd0e;
+$primaryTextColor: #E0C203;
 $secondaryColor: #3C3C40;
 
 @mixin respond-to($media) {
@@ -30,6 +33,7 @@ $secondaryColor: #3C3C40;
 }
 body{
   font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
 }
 
 .mxw1200{
@@ -41,5 +45,5 @@ body{
 .text-bold{font-weight: bold;}
 
 //classes for colors
-.primaryColor { color: $primaryColor}
+.primaryColor { color: $primaryTextColor}
 .secondaryColor { color: $secondaryColor}

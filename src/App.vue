@@ -1,6 +1,6 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer left absolute temporary v-model="drawer">
+    <v-navigation-drawer absolute left temporary v-model="drawer">
         <div v-for="(item, i) in getmenuItems" :key="`drawerMenu${i}`">
             <a href={item.link} class="elHover">{{item.text}}</a>
         </div>
@@ -10,6 +10,9 @@
     <project-info-block></project-info-block>
     <device-info-block></device-info-block>
     <how-it-work-block></how-it-work-block>
+    <faq-block></faq-block>
+    <form-block></form-block>
+    <map-block :addressItems="addressItems"></map-block>
   </v-app>
 </template>
 
@@ -19,6 +22,9 @@ import MainBlock from '@/components/MainBlock'
 import ProjectInfoBlock from '@/components/ProjectInfoBlock'
 import DeviceInfoBlock from '@/components/DeviceInfoBlock'
 import HowItWorkBlock from '@/components/HowItWorkBlock'
+import FaqBlock from '@/components/FaqBlock'
+import FormBlock from '@/components/FormBlock'
+import MapBlock from '@/components/MapBlock'
 
 export default {
   name: 'App',
@@ -28,7 +34,10 @@ export default {
     MainBlock,
     ProjectInfoBlock,
     DeviceInfoBlock,
-    HowItWorkBlock
+    HowItWorkBlock,
+    FaqBlock,
+    FormBlock,
+    MapBlock
   },
 
   data() {
@@ -40,7 +49,13 @@ export default {
         {id: 4, text: "Блог", link: "#blog"},
         {id: 5, text: "Контакты", link: "#contacts"} 
       ],
-      drawer: false
+      drawer: false,
+      addressItems: {
+        city: "г.Новосибирск",
+        address: "ул. Фабричная 17/4 (12,13 этаж)",
+        number: "8-800-511-3715",
+        email: "sales@acrylplatform.com"
+      }
     }
   },
   computed: {

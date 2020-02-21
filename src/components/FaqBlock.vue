@@ -7,7 +7,7 @@
                 </v-col>
                 <v-col cols="12" sm="7">
                     <h2 class="headSection pb-3 secondaryColor">{{headSection}}</h2>
-                    <v-expansion-panels multiple value="1" flat class="px-0">
+                    <v-expansion-panels value="1" flat class="px-0">
                         <v-expansion-panel v-for="(item, i) in answers" :key="`answer${i}`" active-class="active-primary" >
                             <v-expansion-panel-header class="px-0" >{{item.text}}</v-expansion-panel-header>
                             <v-expansion-panel-content class="px-0">

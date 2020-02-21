@@ -28,7 +28,7 @@
                         <div class="gridSocial">
                             <div class="social">
                                 <a v-for="(item, i) in iconItems" :key="`iconSocial${i}`" :href="`${item.link}`"> 
-                                    <img :src="`/img/social/icon_social_${item.icon}.svg`">
+                                    <img :src="`/img/social/icon_social_${item.icon}.svg`" :alt="`${item.icon}`">
                                 </a>
                             </div>
                         </div>

@@ -7,7 +7,7 @@
                             <h1>Получай<br />стабильное<br />вознаграждение</h1>
                             <p>Разместив персональный<br />дата-центр у себя в квартире!</p>
                         </div>
-                        <v-btn rounded color="primary" light>Подробнее</v-btn>
+                        <v-btn rounded color="primary secondaryColor">Подробнее</v-btn>
                     </div>
                 </v-col>
             </v-row>

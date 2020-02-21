@@ -19,7 +19,7 @@
                             label="Телефон"
                             required></v-text-field>
                         <div class="d-flex align-center ">
-                            <v-btn rounded color="primary">Заказать</v-btn>
+                            <v-btn rounded color="primary secondaryColor">Заказать</v-btn>
                         </div>
                     </div>
                 </v-col>

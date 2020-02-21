@@ -11,7 +11,7 @@
             </v-row>
             <v-row class="buttonRowSection">
                 <v-col class="d-flex buttonSection">
-                    <v-btn rounded color="primary">{{button}}</v-btn>
+                    <v-btn rounded color="primary secondaryColor">{{button}}</v-btn>
                 </v-col>
             </v-row>
         </v-container>

@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar app short class="surface" pa-0>
+    <v-app-bar app elevate-on-scroll short class="surface" pa-0>
       <v-container h-100 pa-0 align-center d-flex>
         <div class="display1200 h-100">
           <v-toolbar-title>
@@ -17,7 +17,7 @@
                 <a href={item.link} class="elHover">{{item.text}}</a>
               </div>
               <div class="d-flex align-center pl-3">
-                <v-btn rounded color="primary" small >Заказать</v-btn>
+                <v-btn rounded color="primary secondaryColor" small >Заказать</v-btn>
               </div>
             </v-toolbar-items>
           </div>

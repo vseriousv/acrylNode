@@ -8,7 +8,7 @@
                     </div>
                 </div>
                 <div class="d-flex align-center pl-3">
-                    <v-btn rounded color="primary" >Заказать</v-btn>
+                    <v-btn rounded color="primary secondaryColor" >Заказать</v-btn>
                 </div>
             </v-row>
             <v-row>

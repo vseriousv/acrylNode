@@ -18,7 +18,7 @@
                             </v-col>
                         </v-row>
                     </div>
-                    <div class="py-5"><v-btn rounded color="primary" >Заказать</v-btn></div>
+                    <div class="py-5"><v-btn rounded color="primary secondaryColor" >Заказать</v-btn></div>
                 </v-col>
             </v-row>
         </v-container>

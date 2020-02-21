@@ -1,5 +1,6 @@
 <template>
     <section class="form-block mxw1200">
+        <div id="targetOffer"></div>
         <v-container>
             <v-row class="height100">
                 <v-col cols="12" offset-sm="5" md="7" >
@@ -49,10 +50,17 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/styles/index.scss";
+#targetConteiner{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:-100px;
+}
 .form-block{
     width: 100%;
     display: flex;
     padding: 20px 10px;
+    position: relative;
     .mapImage{
         background-image: url(/img/FAQ_Node.png);
         width: 100%;

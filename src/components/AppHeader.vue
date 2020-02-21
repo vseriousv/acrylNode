@@ -4,7 +4,7 @@
         <div class="display1200 h-100">
           <v-toolbar-title>
             <div class="logotype">
-              <img class="vert-center widthMobil" src='/img/Acryl-Logo.svg' alt="acryl-logo"/>
+              <a href="#topTarget"><img class="vert-center widthMobil" src='/img/Acryl-Logo.svg' alt="acryl-logo"/></a>
             </div>
           </v-toolbar-title>
           <v-spacer></v-spacer>
@@ -17,7 +17,7 @@
                 <a href={item.link} class="elHover">{{item.text}}</a>
               </div>
               <div class="d-flex align-center pl-3">
-                <v-btn rounded color="primary secondaryColor" small >Заказать</v-btn>
+                <v-btn rounded color="primary secondaryColor" small href="#targetOffer">Заказать</v-btn>
               </div>
             </v-toolbar-items>
           </div>

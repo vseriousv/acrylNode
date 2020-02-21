@@ -24,7 +24,7 @@
                         <div class="underCardScheme underSecondCard"><span>{{underSecondCard}}</span></div>
                     </div>
                     <div class="buttonsBlock py-5">
-                        <v-btn rounded color="primary secondaryColor" class="mx-2" >Заказать</v-btn>
+                        <v-btn rounded color="primary secondaryColor" class="mx-2"  href="#targetOffer">Заказать</v-btn>
                     </div>
                 </v-col>
             </v-row>

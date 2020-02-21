@@ -1,7 +1,7 @@
 <template>
   <v-app id="inspire">
     <!-- NAVICAGTION DRAWER -->
-    <v-navigation-drawer absolute left temporary v-model="drawer" class="hidden-md-and-up">
+    <v-navigation-drawer fixed left temporary v-model="drawer" class="hidden-md-and-up">
       <div class="nav-drawer">
         <div class="topBlock">
           <v-list-item>
@@ -40,7 +40,7 @@
           <v-list-item>
             <v-list-item-content>
               <v-list-item-title class="title">
-                  <v-btn rounded color="primary secondaryColor" small>Заказать</v-btn>
+                  <v-btn rounded color="primary secondaryColor" small href="#targetConteiner">Заказать</v-btn>
               </v-list-item-title>
             </v-list-item-content>
           </v-list-item>
@@ -131,11 +131,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/sass/variables.scss';
+@import "./assets/styles/index.scss";
 #inspire{
   font-family: $body-font-family !important;
   .nav-drawer{
     position: fixed;
+    top: 0;
     width: 100%;
     height: 100vh;
     display: flex;

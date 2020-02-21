@@ -1,5 +1,6 @@
 <template>
     <section class="project-info-block mxw1200">
+        <div id="targetInfo"></div>
         <v-container>
             <v-row class="height100">
                 <v-col cols="12" sm="5">
@@ -45,7 +46,14 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/styles/index.scss";
+#targetInfo{
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+}
 .project-info-block{
+    position: relative;
     width: 100%;
     display: flex;
     padding: 20px 10px;

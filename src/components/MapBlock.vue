@@ -9,11 +9,6 @@
                     <p>{{addressItems.email}}</p>
                 </v-col>
             </v-row>
-            <v-row class="buttonRowSection">
-                <v-col class="d-flex buttonSection">
-                    <v-btn rounded color="primary secondaryColor">{{button}}</v-btn>
-                </v-col>
-            </v-row>
         </v-container>
     </section>
 </template>
@@ -45,7 +40,7 @@ export default {
             .addressSection{
                 flex-direction: column;
                 align-items: flex-end;
-                justify-content: flex-end;
+                justify-content: center;
                 p{
                     text-align: right;
                     color: white;

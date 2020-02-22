@@ -27,7 +27,7 @@
                         </div>
                         <div class="gridSocial">
                             <div class="social">
-                                <a v-for="(item, i) in iconItems" :key="`iconSocial${i}`" :href="`${item.link}`"> 
+                                <a v-for="(item, i) in iconItems" :key="`iconSocial${i}`" :href="`${item.link}`" target="_blank"> 
                                     <img :src="`/img/social/icon_social_${item.icon}.svg`" :alt="`${item.icon}`">
                                 </a>
                             </div>
@@ -51,11 +51,11 @@ export default {
   data(){
       return {
           iconItems: [
-              {id: 1, icon: "ins", link: "#ins"},
-              {id: 2, icon: "fb", link: "#fb"},
-              {id: 3, icon: "tw", link: "#tw"},
-              {id: 4, icon: "vk", link: "#vk"},
-              {id: 5, icon: "tg", link: "#tg"},
+              {id: 1, icon: "ins", link: "https://www.instagram.com/acrylplatformofficial/"},
+              {id: 2, icon: "fb", link: "https://www.facebook.com/acrylplatformofficial"},
+              {id: 3, icon: "tw", link: "https://twitter.com/acrylplatform"},
+              {id: 4, icon: "vk", link: "https://vk.com/acrylplatform"},
+              {id: 5, icon: "tg", link: "https://t.me/Acrylplatform"},
           ]
       }
   }

@@ -14,7 +14,7 @@
                 <a href="tel:88005113715" class="disPrimary">8 (800) 511-37-15</a>
               </div>
               <div class="d-flex align-center pr-3" v-for="(item, i) in getmenuItems" :key="`menuItem${i}`">
-                <a href={item.link} class="elHover">{{item.text}}</a>
+                <a :href="`${item.link}`" class="elHover" :target="`${item.target}`">{{item.text}}</a>
               </div>
               <div class="d-flex align-center pl-3">
                 <v-btn rounded color="primary secondaryColor" small href="#targetOffer">Заказать</v-btn>

@@ -1,10 +1,10 @@
 <template>
-    <section class="footer-block">
+    <section id="contacts" class="footer-block">
         <v-container class="Container mxw1200">
             <v-row class="d-flex rowMenuItems">
                 <div class="d-none d-md-flex">
                     <div class="d-flex align-center pr-3" v-for="(item, i) in getFooterItems" :key="`footerItem${i}`">
-                        <a href={item.link} class="elHover">{{item.text}}</a>
+                        <a :href="`${item.link}`" class="elHover" :target="`${item.target}`">{{item.text}}</a>
                     </div>
                 </div>
                 <div class="d-flex align-center pl-3">

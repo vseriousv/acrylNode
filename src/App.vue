@@ -58,7 +58,7 @@
     <faq-block></faq-block>
     <form-block></form-block>
     <map-block :addressItems="addressItems"></map-block>
-    <footer-block :footer-items="footerItems" :addressItems="addressItems"></footer-block>
+    <footer-block :footer-items="menuItems" :addressItems="addressItems"></footer-block>
   </v-app>
 </template>
 
@@ -93,20 +93,19 @@ export default {
   data() {
     return {
       menuItems: [
-        {id: 1, text: "Магазин", link: "#shop"},
-        {id: 2, text: "Описание", link: "#describe"},
-        {id: 3, text: "Поддержка", link: "#support"},
-        {id: 4, text: "Блог", link: "#blog"},
-        {id: 5, text: "Контакты", link: "#contacts"} 
+        {id: 1, text: "Магазин", link: "https://shop.acrylminer.com/ru/", target: "_blank"},
+        {id: 2, text: "Описание", link: "#targetInfo", target: "_self"},
+        {id: 3, text: "Поддержка", link: "https://support.acrylminer.com/l_rus/", target: "_blank"},
+        {id: 4, text: "Блог", link: "https://medium.com/acrylplatformru", target: "_blank"},
+        {id: 5, text: "Контакты", link: "#contacts", target: "_self"} 
       ],
-      footerItems: [
-        {id: 1, text: "Магазин", link: "#shop"},
-        {id: 2, text: "Описание", link: "#describe"},
-        {id: 3, text: "Поддержка", link: "#support"},
-        {id: 4, text: "Блог", link: "#blog"},
-        {id: 5, text: "Контакты", link: "#contacts"},
-        {id: 6, text: "Инструкция", link: "#instr"},
-      ],
+      // footerItems: [
+      //   {id: 1, text: "Магазин", link: "https://shop.acrylminer.com/ru/", target: "_blank"},
+      //   {id: 2, text: "Описание", link: "#targetInfo", target: "_self"},
+      //   {id: 3, text: "Поддержка", link: "https://support.acrylminer.com/l_rus/", target: "_blank"},
+      //   {id: 4, text: "Блог", link: "https://medium.com/acrylplatformru", target: "_blank"},
+      //   {id: 5, text: "Контакты", link: "#contacts", target: "_self"},
+      // ],
       drawer: false,
       addressItems: {
         city: "г.Новосибирск",
